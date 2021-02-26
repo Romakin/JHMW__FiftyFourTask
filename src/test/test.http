@@ -1,0 +1,25 @@
+   # First task
+
+GET http://localhost:8898/persons/by-city?city=M|P.*
+Accept: application/json
+###
+
+GET http://localhost:8898/persons/age-more-than?age=30
+Accept: application/json
+###
+
+GET http://localhost:8898/persons/by-name-and-surname?name=Maria&surname=Bostovich
+Accept: application/json
+###
+
+GET http://localhost:8898/persons/set?name=Nadia&surname=Kolovich&age=22&phoneNumber=89996541230&city=SPB&createIfNotExists=true
+Accept: application/json
+###
+
+GET http://localhost:8898/persons/by-name-and-surname?name=Nadia&surname=Kolovich
+Accept: application/json
+###
+
+GET http://localhost:8898/persons/delete?name=Nadia&surname=Kolovich&age=22
+Accept: application/json
+###
