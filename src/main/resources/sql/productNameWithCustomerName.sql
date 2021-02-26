@@ -1,3 +1,3 @@
-SELECT O.product_name AS PRODUCT FROM ORDERC O JOIN CUSTOMER C
-ON O.customer_id = C.id
+SELECT O.product_name AS PRODUCT FROM OrderC O JOIN Customer C
+ON O.customer.id = C.id
 WHERE upper(C.name) LIKE upper( :name )

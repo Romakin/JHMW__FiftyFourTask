@@ -22,4 +22,5 @@ public class FetchController {
     public List<String> getFetchProducts(@RequestParam("name") String name) {
         return service.getFetchProducts(name);
     }
+
 }

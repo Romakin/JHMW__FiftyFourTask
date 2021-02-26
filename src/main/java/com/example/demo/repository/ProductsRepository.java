@@ -23,7 +23,7 @@ public class ProductsRepository {
 
     public List<String> getProductName(String customer) {
         String sqlQuery = read(QUERY_SCRIPT_NAME);
-        return entityManager.createNativeQuery(sqlQuery).setParameter(QUERY_COLUMN_NAME, customer).getResultList();
+        return entityManager.createQuery(sqlQuery).setParameter(QUERY_COLUMN_NAME, customer).getResultList();
     }
 
     public static String read(String scriptName) {
