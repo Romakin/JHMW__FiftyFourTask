@@ -1,1 +1,0 @@
-SELECT * FROM PERSONS p WHERE p.cityOfLiving = :city
