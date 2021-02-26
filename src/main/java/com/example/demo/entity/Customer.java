@@ -1,4 +1,4 @@
-package com.example.demo.dao;
+package com.example.demo.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -7,29 +7,26 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
-@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 @Entity
-@IdClass(PersonPK.class)
-public class Person {
-
-    // первичный ключ  - name, surname, age
+public class Customer {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
     @Column(nullable = false)
     private String name;
 
-    @Id
     @Column(nullable = false)
     private String surname;
 
-    @Id
     @Column(nullable = false)
     private int age;
 
-    private String phoneNumber;
-    private String cityOfLiving;
+    @Column(nullable = true)
+    private String phone_number;
 
 }
