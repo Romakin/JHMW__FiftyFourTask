@@ -1,7 +1,6 @@
-# Домашнее задание к занятию 8.4: ORM, Hibernate
+# Домашнее задание к занятию 8.5: Spring Data JPA
 
 Необходимо выполнить и предоставить на проверку следующую задачу:
 
-## [DAO слой c Hibernate](tree/Task1).
-## [Две таблицы с Hibernate](tree/Task2) (со звездочкой *).
-## [Миграции c Hibernate](tree/Task3) (со звездочкой *).
+## [DAO слой c JPA Repositories](/../../tree/jpa-repository).
+## [@Query](/../../tree/jpa-repository-query) (со звездочкой *).
