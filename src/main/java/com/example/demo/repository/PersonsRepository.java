@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
 @Repository
 public class PersonsRepository {
 
-    private static final String QUERY_SCRIPT_NAME = "personsByCity.sql";
+    private static final String QUERY_SCRIPT_NAME = "sql/personsByCity.sql";
     private static final String QUERY_PARAM_NAME = "city";
 
     @PersistenceContext
