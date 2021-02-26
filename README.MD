@@ -2,6 +2,6 @@
 
 Необходимо выполнить и предоставить на проверку следующую задачу:
 
-## [DAO слой c Hibernate](/tree/Task1).
-## [Две таблицы с Hibernate](/tree/Task2) (со звездочкой *).
-## [Миграции c Hibernate](/tree/Task3) (со звездочкой *).
+## [DAO слой c Hibernate](/../../tree/Task1).
+## [Две таблицы с Hibernate](/../../tree/Task2) (со звездочкой *).
+## [Миграции c Hibernate](/../../tree/Task3) (со звездочкой *).
