@@ -1,14 +1,18 @@
 # First task
 
-GET http://localhost:8898/persons/by-city?city=MSC
+GET http://localhost:8898/persons/hello
 Accept: application/json
 ###
 
-GET http://localhost:8898/persons/age-more-than?age=30
+GET http://localhost:8898/persons/get-by-city?city=MSC
 Accept: application/json
 ###
 
-GET http://localhost:8898/persons/by-name-and-surname?name=Maria&surname=Bostovich
+GET http://localhost:8898/persons/get-age-more-than?age=30
+Accept: application/json
+###
+
+GET http://localhost:8898/persons/get-by-name-and-surname?name=Maria&surname=Bostovich
 Accept: application/json
 ###
 
@@ -16,7 +20,7 @@ GET http://localhost:8898/persons/set?name=Nadia&surname=Kolovich&age=22&phoneNu
 Accept: application/json
 ###
 
-GET http://localhost:8898/persons/by-name-and-surname?name=Nadia&surname=Kolovich
+GET http://localhost:8898/persons/get-by-name-and-surname?name=Nadia&surname=Kolovich
 Accept: application/json
 ###
 

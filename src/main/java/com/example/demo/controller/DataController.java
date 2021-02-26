@@ -18,6 +18,11 @@ public class DataController {
         this.personsService = personsService;
     }
 
+    @GetMapping("/hello")
+    public String sayHello() {
+        return "Hi, guest!";
+    }
+
     @GetMapping("/set")
     public boolean createOrUpdatePerson(
             @RequestParam("name") String name,
@@ -41,18 +46,18 @@ public class DataController {
         return personsService.deletePerson(name, surname, age);
     }
 
-    @GetMapping("/by-city")
+    @GetMapping("/get-by-city")
     public List<Person> getPersonsByCity(@RequestParam("city") String city) {
         return personsService.getPersonsByCity(city);
     }
 
-    @GetMapping("/age-more-than")
+    @GetMapping("/get-age-more-than")
     @ResponseBody
     public List<Person> getPersonsAgeMoreThan(@RequestParam("age") int age) {
         return personsService.getPersonsAgeMoreThan(age);
     }
 
-    @GetMapping("/by-name-and-surname")
+    @GetMapping("/get-by-name-and-surname")
     public Optional<Person> getPersonsByNameAndSurname(@RequestParam("name") String name, @RequestParam("surname") String surname) {
         return personsService.getPersonsByNameAndSurname(name, surname);
     }
